@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>tools</artifactId>
+  
+  <parent>
+    <groupId>com.lt</groupId>
+    <artifactId>core</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  
+  <dependencies>
+  <!-- m3u8合成视频 -->
+    <dependency>
+	    <groupId>org.bouncycastle</groupId>
+	    <artifactId>bcprov-jdk15on</artifactId>
+	    <version>1.69</version>
+    </dependency>
+    
+    <dependency>
+            <groupId>ws.schild</groupId>
+            <artifactId>jave-all-deps</artifactId>
+            <version>2.4.6</version>
+</dependency>
+    <dependency>
+	    <groupId>commons-lang</groupId>
+	    <artifactId>commons-lang</artifactId>
+	    <version>2.6</version>
+    </dependency>
+    
+    <!-- video标签 mp4格式，但是视频编码不对 前台就会断开连接  报错java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+                    所以需要转码-->
+    <dependency>
+      <groupId>org.bytedeco</groupId>
+      <artifactId>javacv</artifactId>
+      <version>1.4.3</version>
+    </dependency>
+ 
+    <dependency>
+      <groupId>org.bytedeco</groupId>
+      <artifactId>javacpp</artifactId>
+      <version>1.4.3</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.bytedeco.javacpp-presets</groupId>
+      <artifactId>ffmpeg-platform</artifactId>
+      <version>4.0.2-1.4.3</version>
+    </dependency>
+    
+    <!-- poi excel -->
+    <dependency>
+	      <groupId>org.apache.poi</groupId>
+	      <artifactId>poi</artifactId>
+	      <version>4.1.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>4.1.0</version>
+    </dependency>
+    
+    <dependency>
+		   <groupId>cn.afterturn</groupId>
+		   <artifactId>easypoi-base</artifactId>
+		   <version>4.1.0</version>
+    </dependency>
+		<dependency>
+		   <groupId>org.jfree</groupId>
+		   <artifactId>jcommon</artifactId>
+		   <version>1.0.24</version>
+		</dependency>
+		<dependency>
+		   <groupId>org.jfree</groupId>
+		   <artifactId>jfreechart</artifactId>
+		   <version>1.0.19</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <!-- <version>3.141.59</version> -->
+		</dependency>
+		<dependency>
+        <groupId>net.lightbody.bmp</groupId>
+        <artifactId>browsermob-core</artifactId>
+        <version>2.1.5</version>
+    </dependency>
+		
+ 
+  </dependencies>
+</project>
